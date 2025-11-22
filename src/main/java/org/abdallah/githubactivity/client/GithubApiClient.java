@@ -3,7 +3,6 @@ package org.abdallah.githubactivity.client;
 import org.abdallah.githubactivity.exception.GitHubApiException;
 import org.abdallah.githubactivity.exception.UserNotFoundException;
 import org.springframework.stereotype.Component;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;

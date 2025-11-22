@@ -24,7 +24,7 @@ public class CommandProcessor {
 
         String userName = args[0];
 
-        String userActivities = githubActivityService.getUserActivity(userName);
+        List<String> userActivities = githubActivityService.getUserActivity(userName);
 
         System.out.println("User activities: " + userActivities);
 

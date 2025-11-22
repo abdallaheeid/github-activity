@@ -1,12 +1,12 @@
 package org.abdallah.githubactivity.model;
 
-import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
-
-
 import java.time.LocalDateTime;
 
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class GithubEvent {
 
     private Long id;
@@ -15,6 +15,7 @@ public class GithubEvent {
 
     private GithubRepo repo;
 
-    private LocalDateTime createdAt;
+    @JsonProperty("created_at")
+    private String createdAt;
 
 }
